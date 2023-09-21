@@ -3,13 +3,13 @@ import { getAuth } from "firebase/auth";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDp8jvqO6SdAKXsHYWxQJEoL5Wt4jgBGUI",
-  authDomain: "photon-gallery.firebaseapp.com",
-  projectId: "photon-gallery",
-  storageBucket: "photon-gallery.appspot.com",
-  messagingSenderId: "771973253517",
-  appId: "1:771973253517:web:81a72a0164c8481fb655c4",
-  measurementId: "G-8SWR2DZ83G"
+  apiKey: 'AIzaSyDdoPdexV65ZJNavIr2Mh7L8R7QRHNg7HE',
+  authDomain: 'drag-and-drop-image-gall-2f716.firebaseapp.com',
+  projectId: 'drag-and-drop-image-gall-2f716',
+  storageBucket: 'drag-and-drop-image-gall-2f716.appspot.com',
+  messagingSenderId: '167667830408',
+  appId: '1:167667830408:web:977b183f1a0574fe97993d',
+  measurementId: "G-NRQYR1WCN7",
 };
 
 
