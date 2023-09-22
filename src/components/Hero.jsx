@@ -2,11 +2,10 @@ import { useEffect, useState } from 'react'
 import './hero.css';
 import {BsSearch, BsCamera2} from 'react-icons/bs';
 import {GoSignOut} from 'react-icons/go';
-import Gallary from './Gallary'
 import { images } from '../Data/Data';
 import { useUserAuth } from '../context/UserAuthContext';
 import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
-import Skeleton from '../components/skeleton/Skeleton';
+import Skeleton from './skeleton/Skeleton';
 import axios from 'axios';
 
 const Hero = () => {
