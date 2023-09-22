@@ -65,7 +65,7 @@ const SignIn = () => {
               />
             </div>
 
-            <p className='text-[.8rem] pt-2 tracking-wider '>Don't know what to do? <a className=" tracking-wider text-[.8rem] text-blue-500 underline" href="https://github.com/akinbo-emmanuel/Photon-Gallery" target='_blank' rel='noreferrer' >Click Here</a> 😁</p>
+            <p className='text-[.8rem] pt-2 tracking-wider '>Don't know what to do? <a className=" tracking-wider text-[.8rem] text-blue-500 underline" href="https://github.com/akinbo-emmanuel/image-gallery" target='_blank' rel='noreferrer' >Click Here</a> 😁</p>
           </div>
 
           <div>
