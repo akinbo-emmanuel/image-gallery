@@ -1,18 +1,13 @@
-import React, { useEffect, useState } from 'react'
-import './hero.css'
-// import './hero.js'
-import {BsSearch, BsCamera2} from 'react-icons/bs'
-import {GoSignOut} from 'react-icons/go'
-import imageOne from '../components/images/planet.svg'
-import imageTwo from '../components/images/astronaut.svg'
-// import Navbar from './Navbar'
+import { useEffect, useState } from 'react'
+import './hero.css';
+import {BsSearch, BsCamera2} from 'react-icons/bs';
+import {GoSignOut} from 'react-icons/go';
 import Gallary from './Gallary'
-import { images } from '../Data/Data'
-import { useUserAuth } from '../context/UserAuthContext'
-import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd'
-import Skeleton from '../components/skeleton/Skeleton'
-import axios from 'axios'
-import { confirmPasswordReset } from 'firebase/auth'
+import { images } from '../Data/Data';
+import { useUserAuth } from '../context/UserAuthContext';
+import { DragDropContext, Droppable, Draggable } from 'react-beautiful-dnd';
+import Skeleton from '../components/skeleton/Skeleton';
+import axios from 'axios';
 
 const Hero = () => {
 
@@ -30,7 +25,7 @@ const Hero = () => {
             setLoad(false)
         })
         .catch ((err) => {
-            console.log(err)
+            // console.log(err)
             setLoad(false)
         })
 
@@ -58,7 +53,7 @@ const Hero = () => {
     try{
       await logOut();
     }catch(err){
-      console.log(err.message)
+    //   console.log(err.message)
     }
   }
 
@@ -79,7 +74,7 @@ const Hero = () => {
                 </div>
 
                 <button className='cursor-pointer flex justify-between items-center gap-3 ' onClick={handleSignOut}>
-                    <h1 className=' text-white font-lato text-sm'>{user && user.email}</h1>
+                    <h1 className=' hidden md:flex text-white font-lato text-sm'>{user && user.email}</h1>
                     <GoSignOut className='text-red-600' size={26}/>
                 </button>
             </nav>
